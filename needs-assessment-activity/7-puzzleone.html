@@ -15,11 +15,73 @@
     <div id="content" class="bg-white mx-auto w-75 p-md-5 p-2">
         
         <h2>Puzzle One</h2>
-        
-        <div class="mt-4">
-            <a class="btn btn-danger btn-lg" href="1-hallway.html">Go back to the hallway</a>
+        <p>Can you identify each of the factors that must be considered during the needs assessment process?
+        </p>
+        <p>Select the correct factors to see the letter clues to help you spell the magic word. Once you've unscrambled your solution, enter it in the answer box to earn your first key.</p>
+        <div class="my-3">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="mb-3">
+                    <label class="form-label d-block"><strong>Possible Factors</strong></label>
+                    <div class="form-check">
+                        <input class="form-check-input" id="currentIllnesses" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="currentIllnesses">Current illnesses</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="currentResources" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="currentResources">Current resources</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="participantAllergies" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="participantAllergies">Participant allergies</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="politicalDynamics" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="politicalDynamics">Political dynamics</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="preferredTravelRoutes" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="preferredTravelRoutes">Preferred travel routes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="contextualInfluences" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="contextualInfluences">Contextual influences</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="weatherForecast" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="weatherForecast">Weather forecast</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="lunchPreferences" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="lunchPreferences">Lunch preferences</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="stakeholderPerspectives" type="checkbox" name="possibleFactors" data-sb-validations="required" />
+                        <label class="form-check-label" for="stakeholderPerspectives">Stakeholder perspectives</label>
+                    </div>
+                    <div class="invalid-feedback" data-sb-feedback="possibleFactors:required">One option is required.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="whatsTheMagicWord" type="text" placeholder="What&#x27;s the magic word?" data-sb-validations="required" />
+                    <label for="whatsTheMagicWord">What&#x27;s the magic word?</label>
+                    <div class="invalid-feedback" data-sb-feedback="whatsTheMagicWord:required">What&#x27;s the magic word? is required.</div>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        <p>To activate this form, sign up at</p>
+                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                </div>
+            </form>
         </div>
-        <iframe src="h5p/NeedsAssessmentFactors.html" title="Needs assessment quiz question" class="" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
         <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
         <div class="my-3">
             <h3 class="mb-4 text-end">Key count: 0</h3>
