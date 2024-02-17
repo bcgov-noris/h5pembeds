@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Unlocking Educational Needs: Escape Room Challenge</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+<body class="bg-light fs-5">
+    <div class="text-bg-success px-md-5 p-2 py-md-4">
+        <h1 class="w-75 mx-auto">Unlocking Educational Needs</h1>
+    </div>
+    <div id="content" class="bg-white mx-auto w-75 p-md-5 p-2">
+        <h2>Puzzle Two</h2>
+        <p>Can you identify each of the factors that must be considered during the needs assessment process? </p>
+        <p>Select the correct factors to see the letter clues to help you spell the magic word. Once you've unscrambled your solution, enter it in the answer box to earn your first key.</p>
+        <div class="my-3">
+            <form id="puzzletwo">
+                <div class="mb-3">
+                    <label for="magicword" class="form-label"><strong>What's the magic word?</strong></label>
+                    <select class="form-select form-select-lg" id="magicword" required>
+                        <option selected disabled value="">Select one...</option>
+                        <option value="fact">FACT</option>
+                        <option value="real">REAL</option>
+                        <option value="need">NEED</option>
+                        <option value="deal">DEAL</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-lg" id="submitButton" type="button">Check my answer</button>
+                <div class="d-none alert alert-danger" id="word-incorrect">
+                    <h3>That's not the magic word</h3>
+                    <p>Alas, brave adventurer, it seems the answer you provided did not unlock the secrets hidden within the puzzle. Take heart, gather your resolve, and let this moment of challenge inspire you to try again!</p>
+                    <button class="btn btn-secondary btn-lg" id="resetButton" type="button">Try again</button>
+                </div>
+                <div class="alert alert-success d-none p-4" id="word-correct">
+                    <img src="img/gold-key.svg" alt="Outline of a key" height="100 px" width="auto" class="flex-shrink-0 me-4">
+                    <div class="flex-grow-1">
+                        <h3>You found your second key!</h3>
+                        <p>Congratulations on your first key! Your determination, wit, and keen observation have led you to this moment of triumph. May the thrill of victory inspire you as you continue your noble quest towards ultimate liberation!</p>
+                        <a class="btn btn-success btn-lg" href="8-puzzletwo.html">Start the next puzzle</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="my-3" id="keycount">
+            <h3 class="mb-4 text-end">Key count: 1</h3>
+            <div class="d-flex justify-content-end flex-none">
+                <img src="img/gold-key.svg" alt="Gold key" height="100 px" width="auto">
+                <img src="img/missing-key.svg" alt="Outline of a key" height="100 px" width="auto">
+                <img src="img/missing-key.svg" alt="Outline of a key" height="100 px" width="auto">
+                <img src="img/missing-key.svg" alt="Outline of a key" height="100 px" width="auto">
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- custom script for form -->
+    <script>
+        var ready = (callback) => {
+            if (document.readyState != "loading") callback();
+            else document.addEventListener("DOMContentLoaded", callback);
+        }
+
+        ready(() => {
+
+            document.querySelector("#submitButton").addEventListener("click", (e) => {
+                if (document.querySelector("#magicword").value == "need") {
+                    document.querySelector("#word-correct").classList.replace("d-none", "d-flex");
+                    document.querySelector("#keycount").classList.add("d-none");
+                }
+                else {
+                    document.querySelector("#word-incorrect").classList.replace("d-none", "d-block");
+                };
+                document.querySelector("#submitButton").classList.add("d-none");
+            })
+            document.querySelector("#resetButton").addEventListener("click", (e) => {
+                document.querySelector("#submitButton").classList.replace("d-none", "d-block");
+                document.querySelector("#word-incorrect").classList.replace("d-block", "d-none");
+            })
+        })
+    </script>
+</body>
+</html>
