@@ -22,6 +22,13 @@
                 <div class="mb-3 container">
                     <div class="row">
                         <div class="form-check col-8">
+                            <input class="form-check-input" id="politicalDynamics" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="politicalDynamics">Political dynamics</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>E</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
                             <input class="form-check-input" id="currentIllnesses" type="checkbox" name="possibleFactors" />
                             <label class="form-check-label" for="currentIllnesses">Current illnesses</label>
                         </div>
@@ -40,13 +47,6 @@
                             <label class="form-check-label" for="participantAllergies">Participant allergies</label>
                         </div>
                         <div class="form-letter col-4 d-none">Letter clue: <strong>R</strong></div>
-                    </div>
-                    <div class="row">
-                        <div class="form-check col-8">
-                            <input class="form-check-input" id="politicalDynamics" type="checkbox" name="possibleFactors" />
-                            <label class="form-check-label" for="politicalDynamics">Political dynamics</label>
-                        </div>
-                        <div class="form-letter col-4 d-none">Letter clue: <strong>E</strong></div>
                     </div>
                     <div class="row">
                         <div class="form-check col-8">
@@ -81,6 +81,7 @@
                             <input class="form-check-input" id="stakeholderPerspectives" type="checkbox" name="possibleFactors" />
                             <label class="form-check-label" for="stakeholderPerspectives">Stakeholder perspectives</label>
                         </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>D</strong></div>
                         <div class="invalid-feedback">At least one option is required.</div>
                     </div>
                 </div>
@@ -96,7 +97,7 @@
                 </div>
                 <button class="btn btn-primary btn-lg" id="submitButton" type="button">Check my answer</button>
                 <div class="d-none alert alert-danger" id="word-incorrect">
-                    <h3>That's not the magic word</h3>
+                    <h3>That's not the magic word...</h3>
                     <p>Alas, brave adventurer, it seems the answer you provided did not unlock the secrets hidden within the puzzle. Take heart, gather your resolve, and let this moment of challenge inspire you to try again!</p>
                     <button class="btn btn-secondary btn-lg" id="resetButton" type="button">Try again</button>
                 </div>
@@ -131,14 +132,14 @@
         }
 
         ready(() => {
-            const checkbox = document.querySelectorAll(".form-check");
-            checkbox.forEach((checkbox) => checkbox.addEventListener("click", (e) => {
+            const checkbox = document.querySelectorAll(".form-check-input");
+            checkbox.forEach((checkbox) => checkbox.addEventListener("change", (e) => {
 
-                if (checkbox.nextElementSibling.classList.contains("d-none")) {
-                    checkbox.nextElementSibling.classList.replace("d-none", "d-block");
+                if (checkbox.parentElement.nextElementSibling.classList.contains("d-none")) {
+                    checkbox.parentElement.nextElementSibling.classList.replace("d-none", "d-block");
                 }
                 else {
-                    checkbox.nextElementSibling.classList.replace("d-block", "d-none");
+                    checkbox.parentElement.nextElementSibling.classList.replace("d-block", "d-none");
                 };
             }))
 
