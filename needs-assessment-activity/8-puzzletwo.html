@@ -21,22 +21,22 @@
                 <div class="bg-light border rounded p-3">
                     <h3 class="fs-5">Word List</h3>
                     <ul class="ms-0 list-unstyled">
-                        <li>ASSESSMENT</li>
-                        <li>COMMUNITY</li>
-                        <li>EDUCATION</li>
-                        <li>EMPOWER</li>
-                        <li>FUNDING</li>
-                        <li>IDEAS</li>
-                        <li>ISSUES</li>
-                        <li>MARKETING</li>
-                        <li>PARTICIPANTS</li>
-                        <li>PERFORMANCE</li>
-                        <li>PLANNERS</li>
-                        <li>PROGRAM</li>
-                        <li>SOLUTIONS</li>
-                        <li>STRUCTURED</li>
-                        <li>TRAINING</li>
-                        <li>VISIBILITY</li>
+                        <Li>Assessment</Li>
+                        <Li>Community</Li>
+                        <Li>Education</Li>
+                        <Li>Empower</Li>
+                        <Li>Funding</Li>
+                        <Li>Ideas</Li>
+                        <Li>Issues</Li>
+                        <Li>Marketing</Li>
+                        <Li>Participants</Li>
+                        <Li>Performance</Li>
+                        <Li>Planners</Li>
+                        <Li>Program</Li>
+                        <Li>Solutions</Li>
+                        <Li>Structured</Li>
+                        <Li>Training</Li>
+                        <Li>Visibility</Li>
                     </ul>
                 </div>
             </div>
@@ -48,8 +48,8 @@
                     <label for="magicword" class="form-label"><strong>What's the magic word?</strong></label>
                     <select class="form-select form-select-lg" id="magicword" required>
                         <option selected disabled value="">Select one...</option>
-                        <option value="support">SUPPORT</option>
                         <option value="caution">CAUTION</option>
+                        <option value="support">SUPPORT</option>
                         <option value="noticed">NOTICED</option>
                         <option value="founded">FOUNDED</option>
                     </select>
@@ -93,7 +93,7 @@
         ready(() => {
 
             document.querySelector("#submitButton").addEventListener("click", (e) => {
-                if (document.querySelector("#magicword").value == "need") {
+                if (document.querySelector("#magicword").value == "support") {
                     document.querySelector("#word-correct").classList.replace("d-none", "d-flex");
                     document.querySelector("#keycount").classList.add("d-none");
                 }
