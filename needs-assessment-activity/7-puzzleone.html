@@ -13,77 +13,104 @@
         <h1 class="w-75 mx-auto">Unlocking Educational Needs</h1>
     </div>
     <div id="content" class="bg-white mx-auto w-75 p-md-5 p-2">
-        
         <h2>Puzzle One</h2>
-        <p>Can you identify each of the factors that must be considered during the needs assessment process?
-        </p>
+        <p>Can you identify each of the factors that must be considered during the needs assessment process? </p>
         <p>Select the correct factors to see the letter clues to help you spell the magic word. Once you've unscrambled your solution, enter it in the answer box to earn your first key.</p>
         <div class="my-3">
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form id="puzzleone">
+                <label class="form-label d-block"><strong>Possible Factors</strong></label>
+                <div class="mb-3 container">
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="currentIllnesses" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="currentIllnesses">Current illnesses</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>L</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="currentResources" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="currentResources">Current resources</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>N</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="participantAllergies" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="participantAllergies">Participant allergies</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>R</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="politicalDynamics" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="politicalDynamics">Political dynamics</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>E</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="preferredTravelRoutes" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="preferredTravelRoutes">Preferred travel routes</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>S</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="contextualInfluences" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="contextualInfluences">Contextual influences</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>E</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="weatherForecast" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="weatherForecast">Weather forecast</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>B</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="lunchPreferences" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="lunchPreferences">Lunch preferences</label>
+                        </div>
+                        <div class="form-letter col-4 d-none">Letter clue: <strong>A</strong></div>
+                    </div>
+                    <div class="row">
+                        <div class="form-check col-8">
+                            <input class="form-check-input" id="stakeholderPerspectives" type="checkbox" name="possibleFactors" />
+                            <label class="form-check-label" for="stakeholderPerspectives">Stakeholder perspectives</label>
+                        </div>
+                        <div class="invalid-feedback">At least one option is required.</div>
+                    </div>
+                </div>
                 <div class="mb-3">
-                    <label class="form-label d-block"><strong>Possible Factors</strong></label>
-                    <div class="form-check">
-                        <input class="form-check-input" id="currentIllnesses" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="currentIllnesses">Current illnesses</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="currentResources" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="currentResources">Current resources</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="participantAllergies" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="participantAllergies">Participant allergies</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="politicalDynamics" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="politicalDynamics">Political dynamics</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="preferredTravelRoutes" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="preferredTravelRoutes">Preferred travel routes</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="contextualInfluences" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="contextualInfluences">Contextual influences</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="weatherForecast" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="weatherForecast">Weather forecast</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="lunchPreferences" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="lunchPreferences">Lunch preferences</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="stakeholderPerspectives" type="checkbox" name="possibleFactors" data-sb-validations="required" />
-                        <label class="form-check-label" for="stakeholderPerspectives">Stakeholder perspectives</label>
-                    </div>
-                    <div class="invalid-feedback" data-sb-feedback="possibleFactors:required">One option is required.</div>
+                    <label for="magicword" class="form-label"><strong>What's the magic word?</strong></label>
+                    <select class="form-select form-select-lg" id="magicword" required>
+                        <option selected disabled value="">Select one...</option>
+                        <option value="fact">FACT</option>
+                        <option value="real">REAL</option>
+                        <option value="need">NEED</option>
+                        <option value="deal">DEAL</option>
+                    </select>
                 </div>
-                <div class="form-floating mb-3">
-                    <input class="form-control" id="whatsTheMagicWord" type="text" placeholder="What&#x27;s the magic word?" data-sb-validations="required" />
-                    <label for="whatsTheMagicWord">What&#x27;s the magic word?</label>
-                    <div class="invalid-feedback" data-sb-feedback="whatsTheMagicWord:required">What&#x27;s the magic word? is required.</div>
+                <button class="btn btn-primary btn-lg" id="submitButton" type="button">Check my answer</button>
+                <div class="d-none alert alert-danger" id="word-incorrect">
+                    <h3>That's not the magic word</h3>
+                    <p>Alas, brave adventurer, it seems the answer you provided did not unlock the secrets hidden within the puzzle. Take heart, gather your resolve, and let this moment of challenge inspire you to try again!</p>
+                    <button class="btn btn-secondary btn-lg" id="resetButton" type="button">Try again</button>
                 </div>
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                        <div class="fw-bolder">Form submission successful!</div>
-                        <p>To activate this form, sign up at</p>
-                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                <div class="alert alert-success d-none p-4" id="word-correct">
+                    <img src="img/gold-key.svg" alt="Outline of a key" height="100 px" width="auto" class="flex-shrink-0 me-4">
+                    <div class="flex-grow-1">
+                        <h3>You found your first key!</h3>
+                        <p>Congratulations on your first key! Your determination, wit, and keen observation have led you to this moment of triumph. May the thrill of victory inspire you as you continue your noble quest towards ultimate liberation!</p>
+                        <a class="btn btn-success btn-lg" href="8-puzzletwo.html">Start the next puzzle</a>
                     </div>
-                </div>
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
-                <div class="d-grid">
-                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
                 </div>
             </form>
         </div>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        
-        <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
-        <div class="my-3">
+        <div class="my-3" id="keycount">
             <h3 class="mb-4 text-end">Key count: 0</h3>
             <div class="d-flex justify-content-end flex-none">
                 <img src="img/missing-key.svg" alt="Outline of a key" height="100 px" width="auto">
@@ -92,10 +119,44 @@
                 <img src="img/missing-key.svg" alt="Outline of a key" height="100 px" width="auto">
             </div>
         </div>
-    
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- custom script for form -->
+    <script>
+        var ready = (callback) => {
+            if (document.readyState != "loading") callback();
+            else document.addEventListener("DOMContentLoaded", callback);
+        }
+
+        ready(() => {
+            const checkbox = document.querySelectorAll(".form-check");
+            checkbox.forEach((checkbox) => checkbox.addEventListener("click", (e) => {
+
+                if (checkbox.nextElementSibling.classList.contains("d-none")) {
+                    checkbox.nextElementSibling.classList.replace("d-none", "d-block");
+                }
+                else {
+                    checkbox.nextElementSibling.classList.replace("d-block", "d-none");
+                };
+            }))
+
+            document.querySelector("#submitButton").addEventListener("click", (e) => {
+                if (document.querySelector("#magicword").value == "need") {
+                    document.querySelector("#word-correct").classList.replace("d-none", "d-flex");
+                    document.querySelector("#keycount").classList.add("d-none");
+                }
+                else {
+                    document.querySelector("#word-incorrect").classList.replace("d-none", "d-block");
+                };
+                document.querySelector("#submitButton").classList.add("d-none");
+            })
+            document.querySelector("#resetButton").addEventListener("click", (e) => {
+                document.querySelector("#submitButton").classList.replace("d-none", "d-block");
+                document.querySelector("#word-incorrect").classList.replace("d-block", "d-none");
+            })
+        })
+    </script>
 </body>
 </html>
