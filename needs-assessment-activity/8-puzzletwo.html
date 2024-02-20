@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 <body class="bg-light fs-5">
-    <div class="text-bg-success px-md-5 p-2 py-md-4 d-flex justify-content-between align-items-end">
-        <h1 class="w-75 mx-auto">Unlocking Educational Needs</h1>
-        <div>
+    <div class="text-bg-success px-md-5 p-2 py-md-4 d-flex justify-content-between align-items-end flex-wap">
+        <h1 class="flex-grow-1">Unlocking Educational Needs</h1>
+        <div class="flex-shrink-0">
             <h3 class="mb-3 text-end">Key count: 1</h3>
             <div class="d-flex justify-content-end flex-none">
                 <img src="img/gold-key.svg" alt="Gold key" height="80" width="auto">
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div id="content" class="bg-white mx-auto w-75 p-md-5 pt-md-4 p-3">
+    <div id="content" class="bg-white mx-auto container-md p-md-5 pt-md-4 p-3" style="max-width: 80ch;">
         <details class="mb-2">
             <summary class="text-muted fs-6 text-end mb-2">I'm lost, show navigation</summary>
             <nav class="nav justify-content-between mb-3 fs-6">
@@ -33,9 +33,11 @@
         </details>
         <h2>Puzzle Two</h2>
         <p>Now that you've collected your first key, it's on to the next challenge. Solve the crossword puzzle below to reveal the magic word and your second key.</p>
+        <p>On smaller screens, the clue for the highlighted/active word will be shown above the puzzle grid. If you prefer, you can enter your answer in the clue section rather than in the puzzle grid.</p>
+        <p><strong>Tip:</strong> If you resize the browser window, the puzzle will also resize. There might be a slight delay while the new layout loads.</p>
         <div class="bg-light border rounded p-3 mb-4">
             <h3 class="fs-5">Word List</h3>
-            <ul class="ms-0 mb-0 list-unstyled d-flex flex-wrap gap-2 justify-content-betwee lh-sm">
+            <ul class="ms-0 mb-0 list-unstyled d-flex flex-wrap gap-3 lh-sm">
                 <li>Assessment</li>
                 <li>Community</li>
                 <li>Education</li>
@@ -54,7 +56,7 @@
                 <li>Visibility</li>
             </ul>
         </div>
-        <iframe src="h5p/PuzzleTwoCrossword.html" width="100%" height="auto" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe>
+        <iframe src="h5p/PuzzleTwoCrossword.html" class="mw-100" width="100%" height="auto" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"> </iframe>
         <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
         <div class="my-3">
             <form id="puzzletwo">
